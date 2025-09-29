@@ -1,5 +1,7 @@
 from fastapi import FastAPI
-app = FastAPI()
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
+from app.routes.report_routes import router as report_routes
+
+app = FastAPI(title="Mini Regulatory Report Assistant")
+
+# Include routes
+app.include_router(report_routes)
