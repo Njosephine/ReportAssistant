@@ -68,12 +68,20 @@ npm run dev
 
 ####Usage
 Backend: Running on http://localhost:8000
+
          API endpoint: POST /api/process-report
+         
          Health check: GET /health
+         
          Documentation: http://localhost:8000/docs
+
+         
 Frontend: Running on http://localhost:3000
+
         Enter or paste a medical report in the text area
+        
         Click "Process Report" to extract structured information
+        
         View results in cards and table format
 
 Example Input
