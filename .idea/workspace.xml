@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29a95549-f0fd-4bd1-89dd-d8dff5b66adb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/api/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/processing/constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/processing/extractors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/processing/nlp_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/processing/processor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/schemas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/app/pages.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/components/ReportForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/components/reportcard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/components/reportform.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ReportAssistant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ReportAssistant.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/controller/report_controller.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/routes/report_routes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -62,7 +39,7 @@
     <setting file="file://$PROJECT_DIR$/.idea/modules.xml" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -76,6 +53,7 @@
   "keyToString": {
     "FastAPI..executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.routes.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -87,12 +65,13 @@
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "aDefault",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2025.1.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "H:\\Users\\ADMIN\\ReportAssistant\\frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\Users\ADMIN\ReportAssistant\frontend" />
       <recent name="H:\Users\ADMIN\ReportAssistant\backend\app" />
       <recent name="H:\Users\ADMIN\ReportAssistant\backend" />
     </key>
@@ -132,14 +111,26 @@
       <updated>1759141940002</updated>
       <workItem from="1759141942828" duration="28603000" />
       <workItem from="1759219000198" duration="3603000" />
-      <workItem from="1759224283020" duration="2408000" />
+      <workItem from="1759224283020" duration="12167000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ReportAssistant$routes.coverage" NAME="routes Coverage Results" MODIFIED="1759227178095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/app/api" />
     <SUITE FILE_PATH="coverage/ReportAssistant$.coverage" NAME=" Coverage Results" MODIFIED="1759147476307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
