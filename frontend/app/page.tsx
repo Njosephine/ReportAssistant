@@ -35,10 +35,10 @@ export default function Home() {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
-            Adverse Drug Reaction Report Processor
+            Mini Regulatory Report Assistant
           </h1>
           <p className="text-gray-600">
-            Extract structured information from medical adverse drug reaction reports
+            Extract structured information from medical reports
           </p>
         </div>
 

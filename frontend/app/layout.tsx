@@ -6,8 +6,8 @@ import React from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ADR Report Processor",
-  description: "Extract structured information from adverse drug reaction reports",
+  title: "Report Assistant",
+  description: "Extract structured information from medical reports",
 };
 
 export default function RootLayout({
