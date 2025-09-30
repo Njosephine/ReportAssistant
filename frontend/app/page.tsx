@@ -1,46 +1,61 @@
-'use client'
-import './pages.css'
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
-import ReportForm from '../components/reportform'
-import ReportCard from '../components/reportcard'
+'use client';
 
-interface Report {
-  id: number
-  raw: string
-  drug?: string
-  adverse_events?: string[]
-  severity?: string
-  outcome?: string
-}
+import { useState, useCallback } from 'react';
+import { useReportProcessor } from '../hooks/useReportProcessor';
+import InputSection from '../components/InputSection';
+import ResultsSection from '../components/ResultsSection';
 
 export default function Home() {
-  const [reports, setReports] = useState<Report[]>([])
+  const [reportText, setReportText] = useState<string>('');
+  const [file, setFile] = useState<File | null>(null);
+  const { result, loading, error, process, clear } = useReportProcessor();
 
-  const fetchReports = async () => {
-    try {
-      const res = await axios.get('http://127.0.0.1:8000/reports')
-      setReports(res.data)
-    } catch (err) {
-      console.error('Error fetching reports:', err)
-    }
-  }
+  const handleFileUpload = useCallback((file: File) => {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const content = e.target?.result as string;
+      setReportText(content);
+    };
+    reader.readAsText(file);
+  }, []);
 
-  useEffect(() => {
-    fetchReports()
-  }, [])
+  const handleProcess = useCallback(() => {
+    process(reportText);
+  }, [process, reportText]);
 
-   return (
-    <div className="home-container">
-      <h1 className="home-title">Mini Regulatory Report Assistant</h1>
-      <ReportForm onSaved={fetchReports} />
+  const handleClear = useCallback(() => {
+    setReportText('');
+    setFile(null);
+    clear();
+  }, [clear]);
 
-      <h2 className="home-subtitle">History</h2>
-      <div className="report-cards-grid">
-        {reports.map((report) => (
-          <ReportCard key={report.id} report={report} />
-        ))}
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8 px-4">
+      <div className="max-w-4xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-8">
+          <h1 className="text-3xl font-bold text-gray-800 mb-2">
+            Adverse Drug Reaction Report Processor
+          </h1>
+          <p className="text-gray-600">
+            Extract structured information from medical adverse drug reaction reports
+          </p>
+        </div>
+
+        {/* Input Section */}
+        <InputSection
+          reportText={reportText}
+          onReportChange={setReportText}
+          onFileUpload={handleFileUpload}
+          onProcess={handleProcess}
+          onClear={handleClear}
+          loading={loading}
+          error={error}
+        />
+
+        {/* Results Section */}
+        {result && <ResultsSection data={result} />}
       </div>
     </div>
-  )
+  );
 }
