@@ -99,7 +99,6 @@ Example Output
   "outcome": "recovered"
 }
 
-##SCREENSHOTS
 
 
 
