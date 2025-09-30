@@ -5,14 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29a95549-f0fd-4bd1-89dd-d8dff5b66adb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/controller/report_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/routes/report_routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/api/routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/processing/constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/processing/extractors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/processing/nlp_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/processing/processor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/app/pages.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/components/ReportForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/components/reportcard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/components/reportform.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ReportAssistant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ReportAssistant.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/controller/report_controller.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/routes/report_routes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,24 +46,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Njosephine"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Njosephine&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Njosephine/ReportAssistant.git",
-    "accountId": "50c2b063-88e4-4183-bd50-5e29eb104839"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Njosephine/ReportAssistant.git&quot;,
+    &quot;accountId&quot;: &quot;50c2b063-88e4-4183-bd50-5e29eb104839&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/.idea/modules.xml" root0="SKIP_INSPECTION" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="33MzsomBh0rxn6FnzH9V0qfaysB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -57,6 +77,7 @@
     "FastAPI..executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -64,7 +85,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2025.1.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -107,7 +130,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1759141940002</updated>
-      <workItem from="1759141942828" duration="14953000" />
+      <workItem from="1759141942828" duration="28603000" />
+      <workItem from="1759219000198" duration="3603000" />
+      <workItem from="1759224283020" duration="2408000" />
     </task>
     <servers />
   </component>

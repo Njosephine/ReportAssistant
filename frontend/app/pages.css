@@ -1,0 +1,31 @@
+.home-container {
+  padding: 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.home-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #222222;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.home-subtitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222222;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #0070f3;
+  padding-bottom: 4px;
+}
+
+.report-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}

@@ -1,0 +1,58 @@
+/* ReportForm.css */
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto 24px auto;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #333;
+}
+
+.form-textarea { color: #333;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  min-height: 120px;
+  transition: border-color 0.3s ease;
+  background-color: white;
+
+}
+
+.form-textarea:focus {
+  border-color: #0070f3;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 112, 243, 0.5);
+}
+
+.form-button {
+  margin-top: 12px;
+  background-color: #0070f3;
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form-button:disabled {
+  background-color: #bbbbbb;
+  cursor: not-allowed;
+}
+
+.form-button:not(:disabled):hover {
+  background-color: #0055cc;
+}

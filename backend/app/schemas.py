@@ -1,13 +1,10 @@
-
 from pydantic import BaseModel
 from typing import List
 
-# Input model
-class ReportRequest(BaseModel):
+class ReportInput(BaseModel):
     report: str
 
-# Output model
-class ReportResponse(BaseModel):
+class ReportOutput(BaseModel):
     drug: str
     adverse_events: List[str]
     severity: str
